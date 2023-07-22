@@ -72,7 +72,9 @@ body {
 .carousel-img {
     opacity: 0;
     animation: fadeInImage 7s ease-in-out;
+
 }
+
 
 @keyframes fadeInImage {
     from {
@@ -92,6 +94,12 @@ body {
         
     }
 
+    .carousel-img {
+        width: 100%;
+    
+    }
+
+    
 }
 
 
