@@ -60,7 +60,7 @@ body {
 .certificate {
     margin-bottom: 3%;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 25%;
     
 }
 
@@ -81,6 +81,17 @@ body {
     to {
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 560px) {
+
+    .certificate {
+        margin-bottom: 3%;
+        text-align: center;
+        padding: 20px 0;
+        
+    }
+
 }
 
 
