@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Icon Example</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <style>
+        /* Your website styles here */
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background for the loading overlay */
+  z-index: 9999; /* Ensure the loading icon is above other content */
+}
+
+.loading-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #ccc;
+  border-top: 4px solid #007bff; /* Blue loading icon */
+  animation: spin 1s linear infinite; /* Rotation animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+    </style>
+  <!-- Loading icon container -->
+  <div class="loading-container">
+    <div class="loading-icon"></div>
+  </div>
+
+  <!-- Rest of your page content goes here -->
+
+  <script>
+    // Show loading icon initially
+window.addEventListener("load", function () {
+  // Hide the loading icon once the page has fully loaded
+  const loadingContainer = document.querySelector(".loading-container");
+  loadingContainer.style.display = "none";
+});
+
+  </script> <!-- Link to your JavaScript file -->
+</body>
+</html>

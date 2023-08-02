@@ -1,7 +1,7 @@
  
  document.addEventListener("DOMContentLoaded", function() {
     const carousel = new bootstrap.Carousel(document.getElementById("demo"), {
-        interval: 1000, // Set the interval for auto slide (5000 ms = 5 seconds)
+        interval: 5000, // Set the interval for auto slide (5000 ms = 5 seconds)
         ride: true // Enable auto sliding
     });
 });
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         navbarIcon.classList.toggle("fixed-icon");
     });
 
-    // Remove the fixed class when clicking anywhere on the screen
+   
     document.addEventListener("click", function(event) {
         if (!navbarToggler.contains(event.target)) {
             navbarIcon.classList.remove("fixed-icon");
@@ -27,6 +27,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function redirectToDonationPage() {
-    // Replace 'donation.html' with the actual donation page URL
     window.location.href = 'https://www.flutterwave.com/ng/';
 }
+
+
+
+    function getInvolved() {
+        var donateContent = document.getElementById("donate").innerText;
+        alert(donateContent);
+    }
+
