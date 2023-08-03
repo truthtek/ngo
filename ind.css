@@ -1,37 +1,47 @@
-
-    header {
-        position: fixed;
-        width: 100%;
-        color: white;
-    }
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: #03001C;
+    
+}
 /* Apply styles for the header */
 #hea {
-    display: flex; 
-    justify-content: space-between;
-    padding-top: 20px ;   
+display: flex; 
+justify-content: space-between;
+padding-top: 0 ;   
 }
 
-/* Style the navigation bar */
+.nav-link{
+    color: #5B8FB9;
+}
 
-/* Style the navigation links */
-.navbar-nav {
-    list-style: none; 
+/* Custom CSS to prevent button from moving when clicked */
+
+  
+
+.navbar-nav .nav-item {
+    color: #5B8FB9;
+    font-size: 16px;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar-nav .nav-item :hover,
+.navbar-nav .nav-item :active {
+    color: white;
+    padding: 0 5px 2px 0;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 
 }
 
-.nav-item {
-    display: inline-block; 
-}
 
-.nav-link {
-    color: white; 
-    text-decoration: none; 
-    padding: 1px 10px; 
-}
 
-.nav-link:hover {
-    background-color: #f0f0f0; /* Optional: Add a background color on hover */
-}
+
+
+
 
 main {
     padding-top: 12%;
@@ -373,25 +383,37 @@ main {
 
 
 
+
+
+
+
+
   
 
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
 
-    .certificate {
-        margin-bottom: 3%;
-        text-align: center;
-        padding: 20px 0;
-        
-    }
-
-    .carousel-img {
-        width: 100%;
+    #navbarToggler {
+        position: fixed;
+        color: #5B8FB9;
+        right: 10px;
+        top: 20px;
+      }
     
-    }
-
+    #navbarMenu {
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: ease-in 1Ss;
+        z-index: 10000;
+      }
+    
+      #navbarIcon {
+        margin: 0; /* Remove any default margin that might affect positioning */
+      }
     .nav-link {
-        padding: 0;
+        padding-top: 0;
         border: 0;
         display: block;
     }
@@ -401,10 +423,40 @@ main {
         flex-direction: column;
         align-items: center;
     }
-
-    .nav-item {
+  
+    .navbar-nav .nav-item{
+        display: flex;
+        text-align: center;
         margin: 5px 0;
+        padding: 5px 5px;
+        transition: 0.2s;
     }
+   
+
+    
+
+
+
+    .navbar-nav {
+        text-align: right;
+    }
+
+    .certificate {
+        margin-bottom: 3%;
+        text-align: center;
+        padding: 20px 0;
+       z-index: -10000;
+
+    }
+
+    
+
+    .carousel-img {
+        width: 100%;
+        z-index: auto;
+    
+    }
+
 
     main {
         padding-top:20%;
@@ -449,6 +501,7 @@ main {
 
     .login-box {
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .location {
@@ -457,7 +510,7 @@ main {
 
     .line-container {
         font-size: 24px;
-        margin-left: 40px;
+        margin-left: 0;
     }
     .icon {
         padding-right: 0;
@@ -465,6 +518,10 @@ main {
 
     .copy {
         padding-top: 20px;
+    }
+
+    #donate img {
+        width:100%,
     }
 
 
