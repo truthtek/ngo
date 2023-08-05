@@ -402,11 +402,13 @@ main {
     
     #navbarMenu {
         position: fixed;
-        top: 30%;
+        top: 26%;
         left: 50%;
         transform: translate(-50%, -50%);
         transition: ease-in 1Ss;
         z-index: 10000;
+        background-color: #03001C;
+        width: 100%;
       }
     
       #navbarIcon {
