@@ -2,7 +2,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: #03001C;
+    background-color: black;
     
 }
 /* Apply styles for the header */
@@ -96,8 +96,7 @@ main {
 
 .cta-buttons {
     font-size: 24px;
-    font-family: serif;
-    padding-top: 20px;   
+    font-family: serif; 
 }
 
 
@@ -131,22 +130,46 @@ main {
 #what {
     background-color: #5B8FB9;
     margin-top: 2%;
-    
-
+    position: relative;
 }
 
-.wat {
-    display: flex;
-    padding: 10%;
-    gap: 20px;
+#what h2 {
+    text-align: center;
+    font-family: serif;
+    font-size: 48px;
+    text-decoration: underline;
+    color: #301E67;
+}
 
+.wat::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./LAWI\ DP-02-01.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; 
+    pointer-events: none;
+}
+
+
+
+.wat {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 10%;
+    padding-top: 5%;
+    box-sizing: border-box;
 }
 
 .wat h3 ,
 .wat p {
     font-size: 20px;
     text-align: center;
-    
 }
 
 .wat h3 {
@@ -397,7 +420,7 @@ main {
         position: fixed;
         color: #5B8FB9;
         right: 10px;
-        top: 20px;
+        top: 35px;
       }
     
     #navbarMenu {
