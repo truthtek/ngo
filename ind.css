@@ -45,6 +45,8 @@ padding-top: 0 ;
 
 main {
     padding-top: 12%;
+    background: #03001C;
+    color: white;
 }
 
 .fade-in > div {
@@ -128,10 +130,11 @@ main {
 }
 
 #what {
-    background-color: #5B8FB9;
-    margin-top: 2%;
+    
+    padding-top: 2%;
     position: relative;
 }
+
 
 #what h2 {
     text-align: center;
@@ -151,7 +154,7 @@ main {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./LAWI\ DP-02-01.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.1; 
+    opacity: 0.2; 
     pointer-events: none;
 }
 
@@ -336,6 +339,10 @@ main {
     animation: btn-anim1 2s linear infinite;
   }
 
+  .center {
+    text-align: center;
+  }
+
   /* Your other website styles here */
 
 .location {
@@ -366,6 +373,11 @@ main {
  .map {
     padding-top: 20px;
  }
+
+ footer {
+    background: #03001C;
+    color: white;
+ }
  .foot {
     display: flex;
     justify-content: space-between; /* Move .line-container to the left and .icon to the right */
@@ -379,7 +391,7 @@ main {
     border-top: 5px solid white;
     margin-top: 20px;
     margin-left:50px ;
-    font-family: cursive;
+    font-family: serif;
     font-size: 36px;
 }
 
@@ -403,17 +415,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-  
-
-
 @media screen and (max-width: 768px) {
 
     #navbarToggler {
@@ -425,12 +426,12 @@ main {
     
     #navbarMenu {
         position: fixed;
-        top: 26%;
+        top: 33%;
         left: 50%;
         transform: translate(-50%, -50%);
         transition: ease-in 1Ss;
         z-index: 10000;
-        background-color: #03001C;
+        background-color: rgb(6, 6, 6);
         width: 100%;
       }
     
@@ -469,22 +470,23 @@ main {
     .certificate {
         margin-bottom: 3%;
         text-align: center;
-        padding: 20px 0;
-       z-index: -10000;
-
+        padding: 30px 0;
+       padding-bottom: 10px;
     }
 
     
 
     .carousel-img {
         width: 100%;
-        z-index: auto;
-    
     }
 
 
     main {
         padding-top:20%;
+    }
+
+    #what {
+        padding-top: 20px;
     }
 
     .wat {
@@ -493,6 +495,8 @@ main {
         align-items: center;
         padding-bottom: 10px;
     }
+
+   
 
     #donate {
         display: flex;
