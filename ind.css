@@ -2,7 +2,10 @@ header {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: black;
+    background: url('LAWI_DP-01_150x150.jpeg') center/cover;
+    opacity: 1;
+    color: #2E7D32;
+    
     
 }
 /* Apply styles for the header */
@@ -13,7 +16,8 @@ padding-top: 0 ;
 }
 
 .nav-link{
-    color: #5B8FB9;
+    color: #2E7D32;
+    opacity: 1;
 }
 
 /* Custom CSS to prevent button from moving when clicked */
@@ -21,7 +25,8 @@ padding-top: 0 ;
   
 
 .navbar-nav .nav-item {
-    color: #5B8FB9;
+    color: #2E7D32;
+    opacity: 2;
     font-size: 16px;
     margin: 0;
     text-decoration: none;
@@ -45,9 +50,11 @@ padding-top: 0 ;
 
 main {
     padding-top: 12%;
-    background: #03001C;
-    color: white;
+    background: #FFF8E1;
+    
 }
+
+
 
 .fade-in > div {
     display: none; /* Hide all divs initially */
@@ -59,7 +66,7 @@ main {
 }
 
 .text h1{
-    color: #301E67;
+    color: #2E7D32;
 }
 
 
@@ -72,27 +79,13 @@ main {
 
 
 .certificates {
-    background-color:#03001C;
+    background: #FFF8E1;
 }
 
 .carousel-img {
     opacity: 0;
     animation: fadeInImage 7s ease-in-out;
 
-}
-
-#donate {
-    display: flex;
-    margin-top: 0%;
-    padding: 0 10%;
-    gap: 15%;
-    background-color: #5B8FB9;
-}
-
-#donate img {
-    border: 5px solid #5B8FB9;
-    border-radius: 100px;
-    padding-bottom: 0;
 }
 
 
@@ -108,7 +101,7 @@ main {
 }
 .donat h2 {
     font-size: 36px;
-    color: #301E67;
+    color: #4CAF50;
 }
 
 .donat p{
@@ -123,14 +116,15 @@ main {
 }
 
 .donat button {
-    border: 10px solid #301E67;
-    background-color: #301E67;
-    color: white;
+    border: 10px solid #4CAF50;
+    background-color: #4CAF50;
+    color: #333;
     font-size: 25px;
 }
 
 #what {
-    
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)),
+                url('LAWI\ DP-02-01.jpg') center/cover;
     padding-top: 2%;
     position: relative;
 }
@@ -141,24 +135,8 @@ main {
     font-family: serif;
     font-size: 48px;
     text-decoration: underline;
-    color: #301E67;
+    color: #4CAF50;
 }
-
-.wat::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./LAWI\ DP-02-01.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2; 
-    pointer-events: none;
-}
-
-
 
 .wat {
     display: grid;
@@ -176,18 +154,19 @@ main {
 }
 
 .wat h3 {
-    color: #301E67;
+    color: #4CAF50;
     font-family: sans-serif;
     font-size: 28px;
 }
 
 .wat p {
-    color: white;
-    font-family: serif;
+    color: #333;
+    font-family:serif;
 
 }
 #blog{
     margin-top: 20px;
+    background: #FFFFFF;
 }
 
 #blog h3 {
@@ -195,7 +174,7 @@ main {
     font-family: serif;
     font-size: 48px;
     text-decoration: underline;
-    color: #301E67;
+    color: #2E7D32;
 }
 
 .blogs {
@@ -209,10 +188,11 @@ main {
   
   .blog-post h2 {
     margin-top: 0;
+    color: #2E7D32;
   }
   
   .date {
-    color: #888;
+    color: #333;
     font-style: italic;
   }
 
@@ -233,7 +213,7 @@ main {
 }
 
 #contact {
-    background-color: #454545;
+    background: linear-gradient(to bottom, #FFFFFF , #4CAF50 );
     margin-top: 20px;
 }
 
@@ -244,7 +224,7 @@ main {
 }
 
 .ct h3 {
-    color: #007bff;
+    color: #4CAF50;
     font-size: 28px;
 }
 
@@ -375,9 +355,9 @@ main {
  }
 
  footer {
-    background: #03001C;
-    color: white;
- }
+    background: #4CAF50 ;
+    color: #333;
+    }
  .foot {
     display: flex;
     justify-content: space-between; /* Move .line-container to the left and .icon to the right */
