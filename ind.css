@@ -411,9 +411,7 @@ main {
 
 @media screen and (max-width: 768px) {
 
-    .logo {
-        padding-left: 25px;
-    }
+    
 
     #navbarToggler {
         position: fixed;
