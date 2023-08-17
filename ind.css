@@ -11,18 +11,14 @@ header {
 display: flex; 
 justify-content: space-between;  
 }
+
 .nav-link{
-    color: #2E7D32;
+    color: yellow;
     opacity: 1;
 }
 
-/* Custom CSS to prevent button from moving when clicked */
-
-  
-
 .navbar-nav .nav-item {
     color: #2E7D32;
-    opacity: 2;
     font-size: 16px;
     margin: 0;
     text-decoration: none;
@@ -35,12 +31,33 @@ justify-content: space-between;
     padding: 0 5px 2px 0;
     border-right: 2px solid white;
     border-bottom: 2px solid white;
-
 }
 
+.navbar-nav .nav-item ul {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    margin-top: 2px;
+}
 
+.navbar-nav .nav-item:hover ul {
+    display: none;
+    border-right: none;
+    border-bottom: none;
+}
 
+.navbar-nav .nav-item ul li {
+    color: white;
+    margin: 5px 0;
+    list-style-type: disc;
+    padding-bottom: 10px;
+    list-style: none;
+    text-decoration: none;
+}
 
+.navbar-nav .nav-item ul li:last-child {
+    border-bottom: none; /* Remove border from the last nested list item */
+}
 
 
 
@@ -400,7 +417,7 @@ main {
 
     #navbarToggler {
         position: fixed;
-        color: #03f40f; /* Change the text color to white for better visibility */
+        color: yellow; /* Change the text color to white for better visibility */
         right: 10px;
         top: 35px;
         z-index: 10001; /* Ensure the icon is displayed above the background */

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="ind.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Add the Bootstrap JavaScript library to your HTML file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <!-- Include Bootstrap JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        body {
+          background-color: #f0f0f0; /* Light gray background */
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+
+        ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+  ul.nested {
+    display: none;
+    margin-left: 20px;
+  }
+
+  li.parent:hover > ul.nested {
+    display: block;
+  }
+      
+         h1 {
+          text-align: center;
+          background-image: url('./edu1.jpeg'); /* Replace with your background image URL */
+          background-size: cover;
+          color: white;
+          padding: 20px;
+          margin-top: 60px;
+          border-bottom: 5px solid #6bbf4d; /* Green border */
+        }
+      
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          padding: 20px;
+        }
+      
+        .grid-item {
+          display: block;
+          text-align: center;
+          padding:20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background-color: white;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+      
+        .grid-item h2 {
+          color: yellow;
+          font-size: 1.6rem;
+          margin-bottom: 10px;
+        }
+      
+        .grid-item p {
+          color: #333;
+          font-size: 0.9rem;
+          margin-bottom: 15px;
+        }
+      
+        .grid-item a {
+          display: inline-block;
+          padding: 5px 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background-color: #6bbf4d; /* Green */
+          color: white;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+        }
+      
+        .grid-item a:hover {
+          background-color: #58a946; /* Darker green on hover */
+        }
+
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                display: block;
+            }
+
+            .grid-item img {
+                width: 100%;
+            }
+        }
+      </style>
+
+
+<header id="hea">
+    <div class="logo">
+        <img src="./LAWI_DP-02-01_100x100.jpeg" alt="logo">
+    </div>
+    <nav class="navbar navbar-expand-md navba">
+        <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <i id="navbarIcon" class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav m1-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">About-Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="prog.html">Programs and Initiatives</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Portfolio">Get Involved</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-me">Event and Engagements</a></li>
+            </ul><!-- Navigation links go here -->
+        </div>
+    </nav>
+</header>
+      
+      
+      
+      <div class="grid-container">
+        
+        <!-- Your grid items with content here -->
+      </div>
+
+      <h1>OUR PROJECTS</h1>
+      
+      
+      <div class="grid-container">
+        <div class="grid-item">
+          <h2>EmpowerED Initiative:</h2>
+          <img src="edu3.jpeg" alt="Image 1">
+          <p>The EmpowerED Initiative shines as a beacon of empowerment for both women and girls. By focusing on comprehensive education and skill development, this initiative addresses critical educational disparities. Through workshops, vocational training, and life skills development, EmpowerED Initiative not only bridges the education gap but also propels women and girls towards a brighter future. The commitment to enhancing knowledge and employability through partnerships with educational institutions and experts underscores its dedication to personal growth, increased opportunities, and empowerment.</p>
+          <a href="#">Read more</a>
+        </div>
+      
+        <div class="grid-item">
+          <h2>ProsperaVenture Initiative:</h2>
+          <img src="edu3.jpeg" alt="Image 2">
+          <p>The ProsperaVenture Initiative stands strong as a platform dedicated to uplifting the entrepreneurial spirit of women and girls. Addressing the unique challenges faced by females in business, it offers microloans, business mentoring, and training programs. The strategic collaborations with financial institutions and industry experts create a supportive ecosystem for women and girls-led businesses to thrive. With a vision of stimulating economic growth and fostering innovation, ProsperaVenture Initiative makes a substantial contribution to sustainable community development.</p>
+          <a href="#">Read more</a>
+        </div>
+      
+        <div class="grid-item">
+          <h2>VitalityVista: Women's Wellness Initiative:</h2>
+          <img src="edu3.jpeg" alt="Image 3">
+          <p>The VitalityVista Initiative champions the well-being of women and girls with a holistic approach. Through health workshops, awareness campaigns, and medical clinics, it actively confronts health disparities. By collaborating with healthcare professionals and organizations, VitalityVista Initiative empowers women and girls to make informed health decisions and access vital healthcare services. This commitment to healthier lives not only benefits individuals but also strengthens the fabric of societies they contribute to.</p>
+          <a href="#">Read more</a>
+        </div>
+    
+        <div class="grid-item">
+            <h2>EquiRights Initiative: Empowering Through Equality</h2>
+            <img src="edu3.jpeg" alt="Image 3">
+            <p>The EquiRights Initiative serves as a powerful advocate for gender equality and the rights of women and girls. Through awareness campaigns, policy advocacy, and legal education, it confronts gender-based discrimination and social injustices head-on. Partnering with human rights organizations and legal experts, EquiRights Initiative amplifies voices, drives policy changes, and works towards a society where women and girls fully participate in all realms of life. This mission of creating equity resonates as a powerful force for positive change</p>
+            <a href="#">Read more</a>
+          </div>
+    
+          <div class="grid-item">
+            <h2>EduNova: Empowering Scholars, Shaping Futures Initiative</h2>
+            <img src="edu3.jpeg" alt="Image 3">
+            <p>EduNova Initiative represents a pivotal step towards the empowerment of talented women and girls through higher education. By offering scholarships, mentorship, and academic support, it breaks down barriers that hinder education. Collaborations with educational institutions and industry professionals illustrate its dedication to empowering women and girls with advanced degrees. EduNova Initiative paves the way for these educated individuals to step into leadership roles and make impactful contributions to society.</p>
+            <a href="#">Read more</a>
+          </div>
+    
+          <div class="grid-item">
+            <h2>TrailblazeHER: Leadership Odyssey Initiative:</h2>
+            <img src="edu3.jpeg" alt="Image 3">
+            <p>The TrailblazeHER Initiative represents a transformative journey towards empowering women and girls to become influential leaders. Through immersive training, mentorship, and exposure to diverse leadership models, it bridges the gender leadership gap. By partnering with established leaders and leadership experts, TrailblazeHER Initiative creates a generation of empowered women and girls ready to drive positive change, break barriers, and inspire others. The emphasis on leadership transformation underscores its commitment to igniting change from within.</p>
+            <a href="#">Read more</a>
+          </div>
+    
+          <div class="grid-item">
+            <h2>UnityUplift: Transforming Communities Together Initiative:</h2>
+            <img src="edu3.jpeg" alt="Image 3">
+            <p>UnityUplift Initiative emerges as a beacon of positive community transformation. By collaborating with local communities, it addresses pressing challenges through infrastructure development, social programs, and community engagement. UnityUplift Initiative's partnerships with community leaders, NGOs, and local stakeholders reflect its dedication to creating sustainable improvements. Its focus on fostering unity and holistic community well-being aligns with the aspirations of thriving societies.</p>
+            <a href="#">Read more</a>
+          </div>
+    
+          <div class="grid-item">
+            <h2>TechHorizon: Bridging Digital Empowerment Initiative</h2>
+            <img src="edu3.jpeg" alt="Image 3">
+            <p>The TechHorizon Initiative represents a resolute effort to bridge the digital divide among women and girls. By providing digital literacy training, technology workshops, and access to digital resources, it empowers them with vital skills. Collaborations with technology experts and institutions underscore TechHorizon Initiative's commitment to equipping women and girls with the tools to embrace economic opportunities, effective communication, and technological empowerment.</p>
+            <a href="#">Read more</a>
+          </div>
+    
+          <div class="grid-item">
+            <h2>CulturalCanvas: HERitage Expressions Unveiled Initiative</h2>
+            <img src="edu3.jpeg" alt="Image 3">
+            <p>CulturalCanvas Initiative celebrates the rich cultural heritage of women and girls through artistic and cultural avenues. By organizing art exhibitions, workshops, and cultural events, it provides a platform for amplifying voices and expressions. Collaborations with artists, cultural organizations, and historians showcase CulturalCanvas Initiative's commitment to promoting cross-cultural dialogue and fostering artistic expression.</p>
+            <a href="#">Read more</a>
+          </div>
+    
+          <div class="grid-item">
+            <h2>UnityCircle: Global Sisterhood Network Initiative</h2>
+            <img src="edu3.jpeg" alt="Image 3">
+            <p>UnityCircle Initiative establishes a global sisterhood network that transcends borders to connect women and girls from diverse backgrounds. This initiative addresses the need for support and empowerment by creating digital platforms, local chapters, and support groups. Collaborations with community organizers and women's organizations underscore UnityCircle Initiative's commitment to fostering a sense of belonging, providing mentorship, and promoting cross-border collaboration.</p>
+            <a href="#">Read more</a>
+          </div>
+      </div>
+
+      <footer>
+        <div class="foot">
+            <div class="line-container">
+                <p>LIFT African<br>Women Initiative</p>
+            </div>
+            <div class="icon">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook-f" style="font-size:36px; color: #333;"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram" style="font-size:36px; color: #333;"></i></a>
+                <a href="https://www.x.com"><i class="fa fa-twitter" style="font-size:36px; color: #333;"></i></a>
+            </div>
+        </div>
+        <div class="copy">
+            &copy; truthtek | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+      
+</body>
+</html>
